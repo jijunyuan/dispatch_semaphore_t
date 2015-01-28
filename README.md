@@ -55,15 +55,15 @@
         
         dispatch_semaphore_signal(sem);
     });
-   dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
-    for(int j=0;j<5;j++)
-    {
+      dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+      for(int j = 0 ; j < 5 ; j++)
+      {
         mainData++;
         NSLog(@">> Main Data: %d",mainData);
-    }
-    -------
+      }
+
  #### output:
- ----
+ -------------
 2015-01-28 22:20:27.680 TMCache[27640:3478178]  >> Sum: 3<br>
 2015-01-28 22:20:27.695 TMCache[27640:3478178]  >> Sum: 6<br>
 2015-01-28 22:20:27.696 TMCache[27640:3478178]  >> Sum: 9<br>
